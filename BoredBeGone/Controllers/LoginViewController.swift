@@ -9,9 +9,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    @IBOutlet weak var BottomView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        BottomView.addBorder(side: .Top, thickness: 1, color: UIColor.lightGray)
+        navigationItem.title = "Log In"
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -25,7 +28,10 @@ class LoginViewController: UIViewController {
             }
         }
     }
-
-
+    
+    @IBAction func unwindToLoginPage(segue: UIStoryboardSegue) {
+        
+    }
+    
 }
 

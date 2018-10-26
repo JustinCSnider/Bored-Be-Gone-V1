@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In-->
+        <!--Intro To Login View Controller-->
         <scene sceneID="dHr-LC-581">
             <objects>
                 <viewController id="o38-yb-14N" customClass="IntroToLoginViewController" customModule="BoredBeGone" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +36,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7fs-1r-rm6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="n2O-bC-Waq">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kLe-sH-5C5">
+                                            <connections>
+                                                <action selector="cancel:" destination="o38-yb-14N" id="cGe-3P-pZI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -44,16 +57,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q0k-wF-2q4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Log In" id="vk8-4R-PyV"/>
+                    <navigationItem key="navigationItem" id="VAz-kB-z4c">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sJd-qR-p9O">
+                            <connections>
+                                <action selector="cancel:" destination="o38-yb-14N" id="xYF-aX-s7p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLk-EZ-cEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="645"/>
+            <point key="canvasLocation" x="5348" y="-1666"/>
         </scene>
-        <!--View Controller-->
+        <!--New Account View Controller-->
         <scene sceneID="tGh-Te-lIo">
             <objects>
-                <viewController id="grZ-PK-fmg" sceneMemberID="viewController">
+                <viewController id="grZ-PK-fmg" customClass="NewAccountViewController" customModule="BoredBeGone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QfZ-ND-Mnk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,13 +154,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fnw-fS-5RA"/>
                     </view>
+                    <connections>
+                        <outlet property="BottomView" destination="iCm-aU-C1a" id="r1Z-1s-b68"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hgi-lz-qGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tr8-QF-7kr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5145" y="458"/>
+            <point key="canvasLocation" x="6580" y="-1666"/>
         </scene>
-        <!--Login-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="BoredBeGone" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,12 +247,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="lsL-sS-36c"/>
+                    <connections>
+                        <outlet property="BottomView" destination="f72-ua-JUE" id="gj0-Ky-eiM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="Y0s-hP-0Fy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5144.8000000000002" y="1305.697151424288"/>
+            <point key="canvasLocation" x="5348" y="-787"/>
         </scene>
         <!--Forgot Username Or Password View Controller-->
         <scene sceneID="B1b-si-Dqw">
@@ -241,7 +265,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0x-6X-cRM">
-                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <rect key="frame" x="166.5" y="323.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -257,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvk-Me-E9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6294" y="1305"/>
+            <point key="canvasLocation" x="6580" y="-788"/>
         </scene>
         <!--Filters-->
         <scene sceneID="gc7-Ix-IqD">
@@ -266,6 +290,21 @@
                     <view key="view" contentMode="scaleToFill" id="WTt-cS-ITA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-uG-OSg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="lht-lO-wLy">
+                                        <barButtonItem key="rightBarButtonItem" title="Log In" id="vJ8-nQ-anh">
+                                            <connections>
+                                                <segue destination="o38-yb-14N" kind="show" id="qBc-gu-zep"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="41m-f8-Eus"/>
                     </view>
@@ -278,10 +317,25 @@
         <!--Home-->
         <scene sceneID="J5E-gs-Kgr">
             <objects>
-                <viewController id="Nt5-zZ-aJe" sceneMemberID="viewController">
+                <viewController id="Nt5-zZ-aJe" customClass="HomeViewController" customModule="BoredBeGone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cft-8k-PIY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-BE-gxa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="jS7-pR-cex">
+                                        <barButtonItem key="rightBarButtonItem" title="Log In" id="xza-HN-diK">
+                                            <connections>
+                                                <segue destination="o38-yb-14N" kind="show" id="sCN-0P-iLn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ct6-fg-vSC"/>
                     </view>
@@ -304,7 +358,6 @@
                         <segue destination="Nt5-zZ-aJe" kind="relationship" relationship="viewControllers" id="58Y-If-dMj"/>
                         <segue destination="1oU-If-3Aw" kind="relationship" relationship="viewControllers" id="bqI-B7-odM"/>
                         <segue destination="hMY-eE-Zn8" kind="relationship" relationship="viewControllers" id="ysp-jS-94g"/>
-                        <segue destination="o38-yb-14N" kind="relationship" relationship="viewControllers" id="ar1-jp-Bzj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLe-c4-BcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,9 +372,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="cNV-Fc-St1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem id="23o-50-ND3">
+                                    <barButtonItem key="rightBarButtonItem" title="Log In" id="9BP-7E-37j">
+                                        <connections>
+                                            <segue destination="o38-yb-14N" kind="show" id="Tbx-QO-8MN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RlF-Of-lx5">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RlF-Of-lx5" id="m1N-dk-ttQ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -344,5 +410,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="p7A-Id-ca2"/>
         <segue reference="EzD-jW-YUJ"/>
+        <segue reference="Tbx-QO-8MN"/>
     </inferredMetricsTieBreakers>
 </document>

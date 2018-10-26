@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0BA9382183552500648B56 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BA9372183552500648B56 /* NewAccountViewController.swift */; };
+		CC0BA93A21835A5C00648B56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BA93921835A5C00648B56 /* HomeViewController.swift */; };
+		CC0BA93C2183710800648B56 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BA93B2183710800648B56 /* Extensions.swift */; };
 		CC586E4F2182064E0042BC9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC586E4E2182064E0042BC9F /* AppDelegate.swift */; };
 		CC586E512182064E0042BC9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC586E502182064E0042BC9F /* LoginViewController.swift */; };
 		CC586E542182064E0042BC9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC586E522182064E0042BC9F /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC0BA9372183552500648B56 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		CC0BA93921835A5C00648B56 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CC0BA93B2183710800648B56 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CC586E4B2182064E0042BC9F /* BoredBeGone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredBeGone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC586E4E2182064E0042BC9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC586E502182064E0042BC9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				CC586E7C218207370042BC9F /* Views and Assets */,
 				CC586E4E2182064E0042BC9F /* AppDelegate.swift */,
 				CC586E5A2182064F0042BC9F /* Info.plist */,
+				CC0BA93B2183710800648B56 /* Extensions.swift */,
 			);
 			path = BoredBeGone;
 			sourceTree = "<group>";
@@ -152,6 +159,8 @@
 				CC586E83218210980042BC9F /* TabBarViewController.swift */,
 				CC586E85218211D20042BC9F /* FiltersViewController.swift */,
 				CC586E87218225860042BC9F /* IntroToLoginViewController.swift */,
+				CC0BA9372183552500648B56 /* NewAccountViewController.swift */,
+				CC0BA93921835A5C00648B56 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,8 +309,11 @@
 				CC586E88218225860042BC9F /* IntroToLoginViewController.swift in Sources */,
 				CC586E80218209990042BC9F /* User.swift in Sources */,
 				CC586E84218210980042BC9F /* TabBarViewController.swift in Sources */,
+				CC0BA93C2183710800648B56 /* Extensions.swift in Sources */,
+				CC0BA93A21835A5C00648B56 /* HomeViewController.swift in Sources */,
 				CC586E86218211D20042BC9F /* FiltersViewController.swift in Sources */,
 				CC586E8221820B040042BC9F /* forgotUsernameOrPasswordViewController.swift in Sources */,
+				CC0BA9382183552500648B56 /* NewAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
