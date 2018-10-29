@@ -8,7 +8,7 @@
 
 import UIKit
 
-class forgotUsernameOrPasswordViewController: UIViewController {
+class ForgotUsernameOrPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

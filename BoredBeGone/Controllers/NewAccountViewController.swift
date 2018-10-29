@@ -10,12 +10,11 @@ import UIKit
 
 class NewAccountViewController: UIViewController {
 
-    @IBOutlet var BottomView: UIView!
+    @IBOutlet var bottomView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BottomView.addBorder(side: .Top, thickness: 1, color: UIColor.lightGray)
-        navigationItem.title = "New Account"
+        bottomView.addBorder(side: .Top, thickness: 1, color: UIColor.lightGray)
         // Do any additional setup after loading the view.
     }
     

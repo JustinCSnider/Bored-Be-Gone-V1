@@ -9,12 +9,11 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var BottomView: UIView!
+    @IBOutlet weak var bottomView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BottomView.addBorder(side: .Top, thickness: 1, color: UIColor.lightGray)
-        navigationItem.title = "Log In"
+        bottomView.addBorder(side: .Top, thickness: 1, color: UIColor.lightGray)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
