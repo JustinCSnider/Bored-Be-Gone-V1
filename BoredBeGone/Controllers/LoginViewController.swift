@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        if let destinationView = segue.destination as? forgotUsernameOrPasswordViewController {
+        if let destinationView = segue.destination as? ForgotUsernameOrPasswordViewController {
             if segue.identifier == "forgotUsername" {
                 destinationView.navigationItem.title = "Forgot Username"
             } else if segue.identifier == "forgotPassword" {

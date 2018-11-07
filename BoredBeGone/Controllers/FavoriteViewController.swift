@@ -8,13 +8,15 @@
 
 import UIKit
 
-class SavedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FavoriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteCell", for: indexPath)
+        
+        return cell
     }
     
 
