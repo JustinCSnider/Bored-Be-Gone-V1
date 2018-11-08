@@ -429,6 +429,9 @@
                                                 <rect key="frame" x="0.0" y="94" width="150" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Solve my boredom"/>
+                                                <connections>
+                                                    <action selector="solveBoredomTapped:" destination="Nt5-zZ-aJe" eventType="touchUpInside" id="zhX-Dl-CDh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -464,6 +467,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="P7b-G8-5DJ"/>
                     <connections>
+                        <outlet property="solutionLabel" destination="5Wm-0s-86l" id="EHD-18-pkk"/>
                         <outlet property="subView" destination="y0L-Oo-MOd" id="N4K-yH-QUC"/>
                     </connections>
                 </viewController>
@@ -490,7 +494,7 @@
             </objects>
             <point key="canvasLocation" x="2311.1999999999998" y="-547.37631184407803"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="cWg-Hy-mdP">
             <objects>
                 <viewController id="acj-wg-puU" customClass="SavedViewController" customModule="BoredBeGone" customModuleProvider="target" sceneMemberID="viewController">
@@ -542,7 +546,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G3X-eP-DOK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cVd-kf-FxC"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" id="cVd-kf-FxC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOy-ar-OVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -552,6 +556,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="8od-5b-GAV"/>
         <segue reference="CZk-lc-f65"/>
-        <segue reference="YLQ-nh-ZOw"/>
+        <segue reference="sCN-0P-iLn"/>
     </inferredMetricsTieBreakers>
 </document>
