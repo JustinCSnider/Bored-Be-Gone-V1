@@ -17,6 +17,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //========================================
+    //MARK: - Navigation
+    //========================================
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if let destinationView = segue.destination as? ForgotUsernameOrPasswordViewController {

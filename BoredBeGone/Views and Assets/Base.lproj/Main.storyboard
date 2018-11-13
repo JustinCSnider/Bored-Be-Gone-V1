@@ -373,12 +373,53 @@
                                     <constraint firstAttribute="height" constant="20" id="lyP-3j-ZSb"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VVU-by-6DH">
+                                <rect key="frame" x="78.5" y="294.5" width="218" height="78"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-1H-8ph">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Eu-M3-XpI">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qfT-gc-4QV">
+                                                <rect key="frame" x="169" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="withFriendsSwitch:" destination="1oU-If-3Aw" eventType="valueChanged" id="jNR-72-6tC"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="BzH-Qz-rY2">
+                                        <rect key="frame" x="0.0" y="47" width="218" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="athletic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-vd-pJU">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jpd-ra-5xi">
+                                                <rect key="frame" x="169" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="athleticSwitch:" destination="1oU-If-3Aw" eventType="valueChanged" id="jP4-J4-kZ0"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="oSl-9D-JPh" secondAttribute="trailing" id="5eD-f7-ohL"/>
+                            <constraint firstItem="VVU-by-6DH" firstAttribute="centerY" secondItem="WTt-cS-ITA" secondAttribute="centerY" id="LO2-kz-dgW"/>
                             <constraint firstItem="oSl-9D-JPh" firstAttribute="top" secondItem="WTt-cS-ITA" secondAttribute="top" id="jx3-yr-E1X"/>
                             <constraint firstItem="oSl-9D-JPh" firstAttribute="leading" secondItem="WTt-cS-ITA" secondAttribute="leading" id="lkS-Qr-uJP"/>
+                            <constraint firstItem="VVU-by-6DH" firstAttribute="centerX" secondItem="WTt-cS-ITA" secondAttribute="centerX" id="t7x-ex-J3a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="41m-f8-Eus"/>
                     </view>
@@ -556,6 +597,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="8od-5b-GAV"/>
         <segue reference="CZk-lc-f65"/>
-        <segue reference="sCN-0P-iLn"/>
+        <segue reference="qBc-gu-zep"/>
     </inferredMetricsTieBreakers>
 </document>
