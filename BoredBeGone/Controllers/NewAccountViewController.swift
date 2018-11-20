@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
-class NewAccountViewController: UIViewController {
+class NewAccountViewController: UIViewController, ManagedObjectContextDependentType {
+    var managedObjectContext: NSManagedObjectContext!
+    
 
     @IBOutlet var bottomView: UIView!
     

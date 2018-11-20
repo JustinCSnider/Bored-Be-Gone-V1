@@ -22,10 +22,12 @@ class FiltersViewController: UIViewController {
     
     @IBAction func withFriendsSwitch(_ sender: UISwitch) {
         changingStringAvailability(for: " with some friends", with: sender)
+        validateAnswerLists()
     }
     
     @IBAction func athleticSwitch(_ sender: UISwitch) {
         changingFilterState(ofType: .athletic, with: sender)
+        validateAnswerLists()
     }
     
     //========================================
@@ -44,9 +46,9 @@ class FiltersViewController: UIViewController {
     }
     
     private func changingStringAvailability(for secondPart: String, with currentSwitch: UISwitch) {
-        if currentSwitch.isOn && validSecondPartAnswerList.lastIndex(of: secondPart) == nil {
+        if !currentSwitch.isOn && validSecondPartAnswerList.lastIndex(of: secondPart) == nil {
             validSecondPartAnswerList.append(secondPart)
-        } else if !currentSwitch.isOn && validSecondPartAnswerList.lastIndex(of: secondPart) != nil {
+        } else if currentSwitch.isOn && validSecondPartAnswerList.lastIndex(of: secondPart) != nil {
             while validSecondPartAnswerList.lastIndex(of: secondPart) != nil {
                 validSecondPartAnswerList.remove(at: validSecondPartAnswerList.lastIndex(of: secondPart)!)
             }

@@ -21,7 +21,10 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func solveBoredomTapped(_ sender: UIButton) {
+        let firstPartIndex = Int.random(in: 0 ..< validFirstPartAnswerList.count)
+        let secondPartIndex = Int.random(in: 0 ..< validSecondPartAnswerList.count)
         
+        solutionLabel.text = validFirstPartAnswerList[firstPartIndex] + validSecondPartAnswerList[secondPartIndex]
     }
     
     

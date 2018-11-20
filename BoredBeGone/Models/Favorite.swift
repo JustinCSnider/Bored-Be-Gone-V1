@@ -9,8 +9,10 @@
 import Foundation
 import CoreData
 
-class Favorite: NSManagedObjectContext {
+class Favorite: NSManagedObject {
     @NSManaged var solution: String
     
     @NSManaged var toAccount: Account
+    
+    static var entityName: String {return "Favorite"}
 }

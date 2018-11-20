@@ -4,7 +4,7 @@
         <attribute name="email" attributeType="String" syncable="YES"/>
         <attribute name="password" attributeType="String" syncable="YES"/>
         <attribute name="username" attributeType="String" syncable="YES"/>
-        <relationship name="favorites" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Favorite" inverseName="toAccount" inverseEntity="Favorite" syncable="YES"/>
+        <relationship name="favorites" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Favorite" inverseName="toAccount" inverseEntity="Favorite" syncable="YES"/>
     </entity>
     <entity name="Favorite" representedClassName=".Favorite" syncable="YES">
         <attribute name="solution" attributeType="String" syncable="YES"/>

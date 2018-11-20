@@ -9,10 +9,14 @@
 import Foundation
 import CoreData
 
-class Account: NSManagedObjectContext {
+class Account: NSManagedObject {
     @NSManaged var username: String
     @NSManaged var password: String
     @NSManaged var email: String
     
     @NSManaged var favorites: NSSet?
+    
+    static var entityName: String {return "Account"}
+    
+    static var currentUser: Account?
 }
