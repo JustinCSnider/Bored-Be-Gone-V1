@@ -38,7 +38,7 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate, ManagedOb
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchAccounts()
+        //fetchAccounts()
         
         usernameTextField.delegate = self
         emailTextField.delegate = self
@@ -46,6 +46,9 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate, ManagedOb
         confirmPasswordTextField.delegate = self
         
         usernameTextField.becomeFirstResponder()
+        
+        passwordTextField.isSecureTextEntry = true
+        confirmPasswordTextField.isSecureTextEntry = true
         
         bottomView.addBorder(side: .Top, thickness: 1, color: UIColor.lightGray)
         // Do any additional setup after loading the view.
@@ -65,7 +68,15 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate, ManagedOb
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == usernameTextField && !(usernameTextField.text ?? "").isEmpty {
-            
+            var accountUserNames: [String] = []
+            for i in accounts {
+                accountUserNames.append(i.username)
+            }
+            if accountUserNames.contains(usernameTextField.text ?? "") {
+                usernameErrorLabel.isHidden = false
+            } else {
+                usernameErrorLabel.isHidden = true
+            }
         } else if textField == emailTextField && !(emailTextField.text ?? "").isEmpty {
             if !isValid(emailTextField.text ?? "") {
                 emailErrorLabel.isHidden = false
@@ -118,4 +129,3 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate, ManagedOb
         return emailTest.evaluate(with: email)
     }
 }
-
